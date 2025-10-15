@@ -1,0 +1,23 @@
+.enviar o pedido para o cliente e a loja;
+
+.criar outro campo para inserir(
+	-input para digitar CEP(e buscar o endereço pelo cep)
+	-forma de pagamento
+	-mostrar o valor total com a taxa fixa de entrega
+);
+.formatar a msg do pedido
+.mexer no código da mensagem
+
+//tentar ainda
+.colocar animação e delay no footer quando ele aparecer
+.adicionar delay nas sections quando clicar no nome no nav
+
+//OBS:
+.arrumar no responsivo
+	-tela de 420px:
+	.arrumar tamanho do navbar
+	.aumentar tamanho do botao de escolher produto
+	.arrumar o tamanho da seção de endereço
+	
+	-tela de 720px:
+	.arrumar o card da seção de endereço

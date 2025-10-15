@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--meta tags para pre-visualização do site quando compartilhar o link-->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="IM BRASA - Bebida boa e gelada na sua casa" />
+  <!--adicionar titulo na pre-visualização-->
+  <meta property="og:image" content="" /><!--adicionar imagem da pre-visualização-->
+  <!-- <meta property="og:description" content="Entregamos sua bebida no Rio de Janeiro inteiro" /> -->
+  <meta property="og:site_name" content="IM BRASA" />
+
+  <title>IM BRASA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/estilos.css" />
+  <link rel="stylesheet" href="./assets/css/responsivo.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./assets/img/maridao-capa.jpeg" alt="logo" /><!--colocar logo do deposito-->
+      <h1>IM BRASA</h1>
+      <div class="online">
+        <span class="on" id="on">ABERTO ATÉ 00:00</span>
+        <span class="off" id="off">ABRIMOS AS 09:00</span>
+      </div>
+    </div>
+  </header>
+
+  <nav id="navbar">
+    <ul type="none">
+      <li><a href="#refrigerantes">Refrigerantes</a></li>
+      <li><a href="#cervejas">CERVEJAS</a></li>
+      <li><a href="#destilados">DESTILADOS</a></li>
+      <li><a href="#outros">OUTROS</a></li>
+    </ul>
+  </nav>
+
+  <main id="menu">
+    <!--INICIO PRODUTOS-->
+
+    <!--primeiro tipo de bebidas-->
+    <section class="refrigerantes" id="refrigerantes">
+      <h3>Refrigerantes</h3>
+
+      <div class="grid">
+        <div class="card">
+          <img src="./assets/img/coca-lata.png" alt="coca-lata" class="bebida" />
+          <div>
+            <strong class="nome-bebida">COCA-COLA LATA</strong>
+            <p class="descricao-bebida">Coca-cola lata 350ml GELADA</p>
+            <div class="preco">
+              <p class="valor">$6,00</p>
+              <button class="botao-add" data-name="COCA-COLA LATA"
+                data-price="6.00"><!--colocar o data-name do button e o data-price do botao-->
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/img/guarana-lata.png" alt="guarana lata" class="bebida" />
+          <div>
+            <strong class="nome-bebida">GUARANÁ LATA</strong>
+            <p class="descricao-bebida">Guaraná lata 350ml GELADO</p>
+            <div class="preco">
+              <p class="valor">$6,00</p>
+              <button class="botao-add" data-name="GUARANA LATA"
+                data-price="6.00"><!--colocar o data-name do button e o data-price do botao-->
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/img/coca-zeroLata.jpg" alt="coca zero lata" class="bebida" />
+          <div>
+            <strong class="nome-bebida">COCA-COLA ZERO LATA</strong>
+            <p class="descricao-bebida">Coca-cola zero lata 350ml GELADA</p>
+            <div class="preco">
+              <p class="valor">$6,00</p>
+              <button class="botao-add" data-name="COCA-ZERO LT"
+                data-price="6.00"><!--colocar o data-name do button e o data-price do botao-->
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/img/fantaLaranja-lata.png" alt="Fanta Laranja lata" class="bebida" />
+          <div>
+            <strong class="nome-bebida">FANTA LARANJA LATA</strong>
+            <p class="descricao-bebida">Fanta Laranja lata 350ml GELADA</p>
+            <div class="preco">
+              <p class="valor">$6,00</p>
+              <button class="botao-add" data-name="FANTA LARANJA LT"
+                data-price="6.00"><!--colocar o data-name do button e o data-price do botao-->
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/img/fantaUva-lata.png" alt="Fanta Uva lata" class="bebida" />
+          <div>
+            <strong class="nome-bebida">FANTA UVA LATA</strong>
+            <p class="descricao-bebida">Fanta Uva lata 350ml GELADA</p>
+            <div class="preco">
+              <p class="valor">$6,00</p>
+              <button class="botao-add" data-name="FANTA UVA LT"
+                data-price="6.00"><!--colocar o data-name do button e o data-price do botao-->
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/img/guaravita.jpg" alt="guaravita" class="bebida" />
+          <div>
+            <strong class="nome-bebida">GUARAVITA</strong>
+            <p class="descricao-bebida">Guaravita GELADO</p>
+            <div class="preco">
+              <p class="valor">$2,50</p>
+              <button class="botao-add" data-name="GUARAVITA"
+                data-price="2.50"><!--colocar o data-name do button e o data-price do botao-->
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/img/coca 2l.jpg" alt="coca 2L" class="bebida" />
+          <div>
+            <strong class="nome-bebida">COCA-COLA 2L</strong>
+            <p class="descricao-bebida">Coca-Cola 2L GELADA</p>
+            <div class="preco">
+              <p class="valor">$12,00</p>
+              <button class="botao-add" data-name="COCA 2L"
+                data-price="12.00"><!--colocar o data-name do button e o data-price do botao-->
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/img/coca-zero2L.jpg" alt="coca-zero 2L" class="bebida" />
+          <div>
+            <strong class="nome-bebida">COCA-COLA ZERO 2L</strong>
+            <p class="descricao-bebida">Coca-Cola Zero 2L GELADA</p>
+            <div class="preco">
+              <p class="valor">$12,00</p>
+              <button class="botao-add" data-name="COCA ZERO 2L"
+                data-price="12.00"><!--colocar o data-name do button e o data-price do botao-->
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/img/guarana2L.jpeg" alt="guarana 2L" class="bebida" />
+          <div>
+            <strong class="nome-bebida">GUARANÁ 2L</strong>
+            <p class="descricao-bebida">Guaraná 2L GELADO</p>
+            <div class="preco">
+              <p class="valor">$12,00</p>
+              <button class="botao-add" data-name="GUARANA 2L"
+                data-price="12.00"><!--colocar o data-name do button e o data-price do botao-->
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--fim primeiro tipo-->
+    <!--segundo tipo de bebidas-->
+    <section>
+      <div class="cervejas" id="cervejas">
+        <h3>Cervejas</h3>
+
+        <div class="grid">
+          <div class="card">
+            <img src="https://via.placeholder.com/515x700" alt=""
+              class="bebida" /><!--colocar foto da bebida e to texto alternativo-->
+            <div>
+              <strong class="nome-bebida">nome bebida</strong>
+              <p class="descricao-bebida">bebida gelada</p>
+              <div class="preco">
+                <p class="valor">$0</p>
+                <button class="botao-add" data-name=""
+                  data-price=""><!--colocar o data-name do button e o data-price do botao-->
+                  <i class="fa fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+    <!--fim do segundo tipo-->
+    <!--terceiro tipo de bebidas-->
+    <section class="destilados" id="destilados">
+      <h3>Destilados</h3>
+
+      <div class="grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/515x700" alt=""
+            class="bebida" /><!--colocar foto da bebida e to texto alternativo-->
+          <div>
+            <strong class="nome-bebida">nome bebida</strong>
+            <p class="descricao-bebida">bebida gelada</p>
+            <div class="preco">
+              <p class="valor">$0</p>
+              <button class="botao-add" data-name=""
+                data-price=""><!--colocar o data-name do button e o data-price do botao-->
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--fim terceiro tipo de bebidas-->
+    <!--quarto tipo de bebidas-->
+    <section class="outros" id="outros">
+      <h3>Outros</h3>
+
+      <div class="grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/515x700" alt=""
+            class="bebida" /><!--colocar foto da bebida e to texto alternativo-->
+          <div>
+            <strong class="nome-bebida">nome bebida</strong>
+            <p class="descricao-bebida">bebida gelada</p>
+            <div class="preco">
+              <p class="valor">$0</p>
+              <button class="botao-add" data-name=""
+                data-price=""><!--colocar o data-name do button e o data-price do botao-->
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--fim quarto tipo de bebidas-->
+    <!--FIM PRODUTOS-->
+  </main>
+
+  <div class="modal" id="cartao-modal">
+
+    <div class="meu-carrinho" id="carrinho-aberto">
+      <h2>Meu carrinho</h2>
+
+      <div id="conteudo"></div>
+      <div class="itens">
+        <p>total: <span id="total-carr">0.00</span></p>
+
+
+        <div class="botoes">
+          <button id="fechar">Fechar</button>
+          <i id="avancar" class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="cliente">
+      <i id="voltar" class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+
+      <div class="campo">
+
+        <label class="nome">Digite seu nome</label>
+        <input type="text" placeholder="Digite seu nome" id="nome-cliente" required>
+        <p id="error-nome" class="name"> Digite seu nome</p>
+      </div>
+
+      <div class="campo">
+
+        <label class="endereço">Digite seu endereço completo</label>
+        <input type="text" placeholder="Digite seu endereço completo" id="adress" required>
+        <p id="error-local" class="local">Digite seu endereço completo</p>
+      </div>
+
+
+      <div class="campo campo-pg">
+        <div class="pg">
+          <label class="formaspagamento">Forma de Pagamento</label>
+          <select name="pagamento" id="pagamentos">
+            <option value="dinheiro" id="opt-dinheiro">Dinheiro</option>
+            <option value="pix" id="opt-pix">Pix</option>
+            <optgroup label="Cartão">
+              <option value="cartao-credito" id="opt-credito">Crédito</option>
+              <option value="cartao-debito" id="opt-debito">Débito</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div id="pix-container">
+          <p>Nossa chave Pix:</p>
+          <span>21969083318</span>
+        </div>
+        <div id="dinheiro-container">
+          <label>Troco?</label>
+          <input type="number" placeholder="Ex:50" id="ipt-troco" required>
+        </div>
+      </div>
+
+      <button id="finalizar">Finalizar pedido</button>
+    </div>
+  </div>
+
+  <footer id="foot-carrinho">
+    <button id="btn-carr">
+      (<span id="quant-carr">vazio</span>) Veja meu carrinho <i class="fa fa-cart-plus"></i>
+    </button>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

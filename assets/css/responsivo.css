@@ -1,0 +1,317 @@
+@media (max-width: 720px) {
+    /* ... (seu código para 720px que já te passei) ... */
+    /* Navbar */
+    nav ul {
+        width: 100%; /* Ajusta a largura da ul para preencher o nav */
+        padding: 0 15px; /* Adiciona um padding para evitar que os itens colem nas bordas */
+        justify-content: space-around; /* Distribui o espaço entre os itens */
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+
+    /* Main e Seções */
+    main {
+        max-width: 95%; /* Reduz a largura máxima do conteúdo */
+        margin: 0 auto; /* Centraliza o conteúdo */
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Reduz a largura mínima das colunas */
+        gap: 30px; /* Diminui o espaçamento entre os cards */
+    }
+
+    section .card {
+        width: 100%; /* Ocupa a largura total para evitar quebras estranhas */
+        flex-direction: column; /* Empilha a imagem e o texto */
+        align-items: center; /* Centraliza os itens */
+        gap: 20px; /* Ajusta o espaço entre os elementos */
+        padding-top: 20px;
+    }
+
+    section .card div {
+        width: 90%; /* Ajusta a largura do contêiner de texto */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    section .card div .descricao-bebida {
+        width: 100%; /* Ocupa a largura total disponível */
+        text-align: center;
+    }
+
+    section .card div .preco {
+        justify-content: center; /* Centraliza o preço e o botão */
+        gap: 20px; /* Adiciona espaço entre o preço e o botão */
+    }
+
+    /* Modal (Carrinho) */
+    .modal .meu-carrinho,
+    .modal #cliente {
+        background-color: #54cc0a;
+        width: 90%; /* Reduz a largura do modal */
+        height: auto; /* Altura automática para se adaptar ao conteúdo */
+        padding: 10px; /* Ajusta o padding */
+    }
+
+    .campo {
+        width: 70%;
+    }
+    #conteudo {
+        width: 95%; /* Ajusta a largura do conteúdo do carrinho */
+        max-height: 250px; /* Reduz a altura máxima */
+        padding-right: 0; /* Remove padding direito */
+    }
+
+    .itens {
+        width: 100%; /* Ocupa a largura total */
+    }
+
+    #cliente input {
+        width: 95%; /* Ajusta a largura dos inputs */
+    }
+}
+
+@media (max-width: 425px) {
+    /* Cabeçalho */
+    header {
+        height: 350px; /* Reduz a altura do cabeçalho */
+    }
+
+    header .logo {
+        width: 100%;
+    }
+
+    header .logo img {
+        width: 120px; /* Reduz o tamanho da logo */
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 32px; /* Reduz o tamanho do título */
+        width: 180px;
+    }
+
+    header .online {
+        width: 200px;
+    }
+
+    header .online .on,
+    header .online .off {
+        width: 100%; /* Ocupa a largura total do contêiner */
+    }
+
+    /* Navbar */
+    nav {
+        height: auto; /* Altura automática para acomodar a quebra de linha */
+        padding: 10px 0; /* Adiciona padding vertical */
+        flex-direction: column; /* Empilha os itens verticalmente */
+    }
+
+    nav ul {
+        flex-direction: column; /* Empilha os itens da lista */
+        gap: 10px; /* Espaçamento entre os itens da lista */
+        width: 100%; /* Garante que ocupe a largura total */
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center; /* Centraliza o texto dos itens */
+    }
+
+    /* Main e Seções */
+    main {
+        padding: 0 10px; /* Adiciona um padding nas laterais */
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Uma única coluna */
+        gap: 40px; /* Ajusta o espaçamento */
+    }
+
+    section h3 {
+        font-size: 20px; /* Reduz o tamanho do título da seção */
+    }
+
+    section .card {
+        flex-direction: column; /* Garante que os cards estejam em coluna */
+        align-items: center;
+        gap: 15px;
+    }
+
+    section img {
+        width: 120px; /* Reduz o tamanho da imagem do produto */
+        height: 120px;
+    }
+
+    section .card div {
+        width: 95%; /* Aumenta a largura do contêiner de texto */
+        text-align: center;
+    }
+
+    section .card div .descricao-bebida {
+        height: auto; /* Altura automática para o texto */
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+
+    section .card div .preco {
+        flex-direction: column; /* Empilha preço e botão */
+        gap: 10px; /* Espaçamento entre eles */
+        align-items: center;
+    }
+
+    /* Modal (Carrinho) - Ajustes para a imagem fornecida */
+    .modal .meu-carrinho,
+    .modal #cliente {
+        width: 95%; /* Ocupa quase toda a largura para ficar mais espaçoso como na imagem */
+        max-width: 380px; /* Adicionado um max-width para não esticar demais em telas ligeiramente maiores que 425px */
+        height: auto; /* Altura automática para se adaptar ao conteúdo */
+        padding: 20px 15px; /* Ajusta o padding interno para ficar mais alinhado com a imagem */
+        border-radius: 8px; /* Ajusta o raio da borda */
+        /* Removido o 'position: absolute' e 'transform' daqui, eles já estão nas regras gerais do modal */
+    }
+
+    .modal .meu-carrinho h2, /* Adicione um h2 ou p ao seu HTML para o título "Seu carrinho" */
+    .modal #cliente h2 {
+        font-size: 20px; /* Tamanho do título "Seu carrinho" */
+        margin-bottom: 20px; /* Espaçamento abaixo do título */
+        text-align: center;
+        width: 100%; /* Garante que o título ocupe a largura */
+    }
+
+    .campo {
+        max-width: 70%;
+    }
+
+    #conteudo {
+        overflow-y: auto;
+        width: 100%; /* Ocupa 100% da largura do modal */
+        max-height: 200px; /* Altura máxima para o scroll */
+        padding-bottom: 15px; /* Espaçamento interno inferior */
+        padding-right: 5px; /* Um pequeno padding para o scrollbar */
+        margin-bottom: 15px; /* Espaçamento abaixo da lista de itens */
+    }
+
+    .item-div {
+        display: flex;
+        flex-direction: column; /* Itens do produto empilhados */
+        align-items: flex-start; /* Alinha o texto à esquerda */
+        gap: 2px; /* Espaçamento menor entre as linhas do item */
+        margin-bottom: 15px; /* Espaço entre cada item do carrinho */
+        border-bottom: 1px solid #eee; /* Linha sutil para separar itens, se desejar */
+        padding-bottom: 10px; /* Padding para a linha de separação */
+    }
+
+    .nome-item {
+        font-weight: 600;
+        margin-top: 0; /* Remove margin-top extra */
+        font-size: 16px; /* Ajuste de tamanho */
+    }
+
+    .preco-item {
+        font-weight: 600;
+        margin: 2px 0; /* Ajusta margins */
+        padding-top: 0; /* Remove padding-top extra */
+        font-size: 15px; /* Ajuste de tamanho */
+    }
+
+    .qtd-item {
+        font-weight: 500;
+        font-size: 14px; /* Ajuste de tamanho */
+        width: 100%; /* Garante que "Quantidade" ocupe a linha */
+        display: flex;
+        justify-content: space-between; /* Para alinhar 'Remover' à direita */
+        align-items: center;
+    }
+
+    #conteudo button { /* O botão de "Remover" */
+        border: none;
+        background-color: transparent; /* Fundo transparente */
+        color: #FF0000; /* Cor vermelha como na imagem do Uber Eats (se quiser, claro) */
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 0; /* Remove padding padrão do botão */
+    }
+
+    .itens p { /* "Total:" */
+        font-weight: bold;
+        font-size: 16px; /* Tamanho da fonte do "Total" */
+        text-align: right; /* Alinha o total à direita */
+        width: 100%; /* Ocupa a largura total */
+        margin-top: 15px; /* Espaçamento acima do total */
+    }
+
+    /* Campos do Formulário Cliente (dentro do modal #cliente) */
+    .campo {
+        width: 100%;
+        gap: 15px; /* Espaçamento entre os campos */
+        align-items: flex-start; /* Alinha os labels e inputs à esquerda */
+        padding: 0 10px; /* Padding para os campos não colarem nas bordas do modal */
+    }
+
+    #cliente label {
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 5px; /* Espaço entre label e input */
+    }
+
+    #cliente input {
+        width: 100%; /* Ocupa 100% da largura do contêiner .campo */
+        height: 40px; /* Altura um pouco maior para inputs */
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid lightgray;
+        font-size: 15px; /* Tamanho da fonte do input */
+    }
+
+    #cliente #error-nome,
+    #error-local {
+        width: 100%;
+        text-align: left;
+        color: #FF0000;
+        font-weight: 500;
+        font-size: 12px;
+        margin-top: -10px; /* Aproxima a mensagem de erro do campo */
+    }
+
+    .itens .botoes { /* Contêiner dos botões "Fechar" e "Finalizar pedido" */
+        flex-direction: row; /* Mantém os botões lado a lado */
+        justify-content: space-between; /* Distribui o espaço entre eles */
+        width: 100%; /* Ocupa a largura total */
+        padding: 0 10px; /* Padding para alinhar com os campos de input */
+        margin-top: 20px; /* Espaço acima dos botões */
+    }
+
+    .botoes #fechar {
+        border: none;
+        background-color: #ffff; /* Fundo branco */
+        font-size: 16px;
+        color: #000000;
+        cursor: pointer;
+        padding: 10px 15px; /* Aumenta o padding para ser mais clicável */
+        border-radius: 5px;
+        font-weight: 500;
+    }
+
+    #cliente #finalizar {
+        border: none;
+        background-color: #54cc0a; /* Cor verde de sucesso */
+        width: auto; /* Largura automática para o conteúdo */
+        padding: 10px 20px; /* Padding para o botão */
+        text-align: center;
+        color: #ffff;
+        border-radius: 5px; /* Raio da borda */
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        flex-grow: 1; /* Permite que o botão ocupe o espaço restante */
+        margin-left: 10px; /* Espaço entre "Fechar" e "Finalizar" */
+    }
+
+    /* Footer */
+    footer {
+        height: 50px; /* Reduz a altura do footer */
+        padding: 5px; /* Ajusta o padding */
+        display: flex; /* Garante que o footer aparece */
+        justify-content: center; /* Centraliza o botão */
+        align-items: center;
+    }
+}
