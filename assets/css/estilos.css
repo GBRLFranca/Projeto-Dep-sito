@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
 /*CABEÇALHO */
@@ -227,6 +226,7 @@ i {
     justify-content: space-around;
     flex-direction: column;
     z-index: 13;
+    
 
     backface-visibility: hidden;
     /* Esconde a parte de trás do elemento durante a rotação */
@@ -251,8 +251,9 @@ i {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
+    gap: 20px;
     z-index: 12;
 
     backface-visibility: hidden;
@@ -418,7 +419,7 @@ i {
 #cliente #finalizar {
     border: none;
     background-color: #54cc0a;
-    width: 191px;
+    width: 190px;
     height: 25px;
     text-align: center;
     color: #ffff;

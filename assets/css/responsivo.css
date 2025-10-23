@@ -1,3 +1,12 @@
+@media (min-width: 721px) and (max-width: 848px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 720px) {
     /* ... (seu código para 720px que já te passei) ... */
     /* Navbar */
@@ -45,7 +54,6 @@
     /* Modal (Carrinho) */
     .modal .meu-carrinho,
     .modal #cliente {
-        background-color: #54cc0a;
         width: 90%; /* Reduz a largura do modal */
         height: auto; /* Altura automática para se adaptar ao conteúdo */
         padding: 10px; /* Ajusta o padding */
@@ -66,6 +74,12 @@
 
     #cliente input {
         width: 95%; /* Ajusta a largura dos inputs */
+    }
+}
+
+@media (max-width: 680px) {
+    #dinheiro-container {
+        gap: 15px;
     }
 }
 
@@ -98,22 +112,34 @@
         width: 100%; /* Ocupa a largura total do contêiner */
     }
 
-    /* Navbar */
+    /*Navbar */
     nav {
-        height: auto; /* Altura automática para acomodar a quebra de linha */
-        padding: 10px 0; /* Adiciona padding vertical */
-        flex-direction: column; /* Empilha os itens verticalmente */
+        padding: 20px 0; /* Adiciona padding vertical */
     }
 
     nav ul {
-        flex-direction: column; /* Empilha os itens da lista */
-        gap: 10px; /* Espaçamento entre os itens da lista */
-        width: 100%; /* Garante que ocupe a largura total */
+        /* Remove a largura fixa para permitir o scroll */
+        width: 100%;
+        /* Permite que os itens saiam do contêiner */
+        justify-content: flex-start; /* Alinha os itens à esquerda */
+        /* Essa é a propriedade chave: permite a rolagem horizontal */
+        overflow-x: auto; 
+        /* Esconde a barra de rolagem vertical, se houver */
+        overflow-y: hidden; 
+        /* Garante que a lista não quebre em várias linhas */
+        flex-wrap: nowrap; 
+        /* Adiciona um pouco de espaço nas laterais para melhor visualização */
+        padding: 20px 10px;
     }
 
     nav ul li {
-        width: 100%;
+        
         text-align: center; /* Centraliza o texto dos itens */
+        /* Adiciona um espaçamento entre os itens */
+        margin-right: 20px; 
+        margin-left: 10px;
+        /* Garante que os itens não encolham para caber na tela */
+        flex-shrink: 0;
     }
 
     /* Main e Seções */
@@ -162,7 +188,7 @@
     .modal #cliente {
         width: 95%; /* Ocupa quase toda a largura para ficar mais espaçoso como na imagem */
         max-width: 380px; /* Adicionado um max-width para não esticar demais em telas ligeiramente maiores que 425px */
-        height: auto; /* Altura automática para se adaptar ao conteúdo */
+        height: 500px; /* Altura automática para se adaptar ao conteúdo */
         padding: 20px 15px; /* Ajusta o padding interno para ficar mais alinhado com a imagem */
         border-radius: 8px; /* Ajusta o raio da borda */
         /* Removido o 'position: absolute' e 'transform' daqui, eles já estão nas regras gerais do modal */
@@ -305,6 +331,8 @@
         flex-grow: 1; /* Permite que o botão ocupe o espaço restante */
         margin-left: 10px; /* Espaço entre "Fechar" e "Finalizar" */
     }
+
+    
 
     /* Footer */
     footer {
